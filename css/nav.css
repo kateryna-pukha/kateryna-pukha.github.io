@@ -1,0 +1,103 @@
+nav {
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 995;
+}
+
+nav.topfixed {
+
+ /*   background-color: rgba (255,255,255,0); */
+}
+
+nav.topfixed .nav-icon span {
+/*    background: #333;*/
+}
+
+nav.topfixed .nav-icon.open span {
+    background: #fff;
+}
+
+nav a {
+    display: block;
+    cursor: pointer;
+}
+
+nav .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: auto;
+    padding: 25px;
+}
+
+.navigation ul {
+    display: flex;
+    font-size: 1.2rem;
+    letter-spacing: .05em;
+    list-style: none;
+}
+
+.navigation li a {
+    color: #bfddfc; /* Колір тексту*/
+    text-decoration: none;
+    padding: 10px;
+}
+
+.navigation button {
+    background: none;
+    border: none;
+    outline: none;
+    }
+    
+    nav .navbar {
+        align-items: center;
+    }
+    
+    nav.topfixed .navigation li a {
+        color: #fff;
+    }
+
+    .navigation button {
+        position: relative;
+        display: block;
+        margin: 0;
+        z-index: 999;
+    }
+    
+    .navigation ul {
+        background-color: rgba(15, 21, 88, 0.8); /*Колір плашки*/
+        position: absolute;
+        padding: 100px 30px 30px 20px;
+        flex-direction: column;
+        right: 0;
+        top: 0;
+/*        min-width: 50%;*/
+        min-height: 100vh;
+        transform: translateX(100%);
+        transition: all 0.5s;
+        opacity:0;
+        transition-property: transform;
+        transition-duration: .35s;
+/*        transition-delay: .2s;*/
+        transition-timing-function: ease;
+        z-index: 998;
+    }
+    
+    .navigation.open ul {
+        transform: translateX(0);
+        opacity:1;
+    }
+    
+    .navigation.open .overlay {
+        background-color: rgba(10,10,10, .3);
+        display: block;
+        position: absolute;
+        left:0;
+        top:0;
+        width:100%;
+        min-height: 100vh;
+        z-index: 997;
+    }
+

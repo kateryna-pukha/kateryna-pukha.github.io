@@ -1,0 +1,36 @@
+#s5 {
+    background-color: #bfddfc;
+    padding: 50px 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 0;
+}
+
+.contact-icons a {
+    background-color: none;
+    border-radius: 8px;
+    display: inline-block;
+    width: 50px;
+}
+
+.contact-icons a.white {
+    background-color: white;
+}
+
+.contact-icons a.white {
+    background-color: white;
+}
+
+.contact-icons a.white {
+    background-color: white;
+}
+
+#contacts .contact-icons a:hover {
+    background-color: gray;
+}
+
+.contact-icons a:nth-child(2) {
+    margin: 0 30px;
+}

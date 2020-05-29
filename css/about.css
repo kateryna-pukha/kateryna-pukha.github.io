@@ -1,0 +1,53 @@
+.container {
+    margin: auto;
+    padding: 25px;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#s1 .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.row {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    /*Розміщення зобр*/
+}
+
+.img-box {
+    max-width: 150px;
+    /* Розмір зображення*/
+}
+
+.text-center {
+    font-family: 'Roboto', sans-serif;
+    
+    align-items: center;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+/*    max-width: 1200px;*/
+    color: rgb(28, 76, 158);
+/*    background-color: #bfddfc; rgb(28, 76, 158);*/
+}
+
+.text {
+    margin: 20px;
+    text-align: center;
+    /*Виключка тексту по центрі*/
+    color: black;
+}
